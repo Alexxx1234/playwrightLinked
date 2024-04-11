@@ -10,13 +10,6 @@ const loginToLink = async(page: Page) =>{
 }
 test.setTimeout(10*60*1000)
 test.describe('Base Tests',()=>{
-test('Basic test @alex', async ({ page }) => {
-    await loginToLink(page)
-    await page.getByTitle('Jobs').click()
-    await page.getByRole('combobox', { name: 'Search by title, skill, or' }).fill('Software Quality Engineer')
-    await page.keyboard.press('Enter')
-})
-
 test('Basic test @addConnections', async ({ page }) => {
     const pageAmount = 30
     const whoToAdd = 'talent acquisition'
